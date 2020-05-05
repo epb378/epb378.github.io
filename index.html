@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Ned Booker</title>
+<title>CV: Ned Booker Github Demo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,6 +17,66 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
 }
 
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 <body>
 
@@ -24,23 +84,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
-    <a href="about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="researchpages" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
-    <a href="skills" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Professional Interests</a>
-    <a href="CV" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <div class="w3-dropdown-hover">
-    <button class="w3-btn">Coding Demos
+    <a href=".." class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="../about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="../researchpages" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+    <a href="../skills" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Professional Interests</a>
+    <a href="../CV" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
+    <div class="dropdown">
+    <button class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Demos
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="w3-dropdown-content">
-      <a href="leafanalyser" ><option>Leaf Analyser demo </option></a>
-      <a href="FRETsimulator"><option>FRET simulator demo</option></a>
+    <div class="dropdown-content">
+      <a href="../leafanalyser">Leaf Analyser demo</a>
+      <a href="../FRETsimulator">FRET simulator demo/a>
     </div>
   </div>
-  
-  </div>
+    </div>
 </div>
+
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:100px">
