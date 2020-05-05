@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Research Interests: Ned Booker</title>
-<meta charset="UTF-8">
+<<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -16,6 +16,67 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: visible;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 <body>
 
@@ -28,12 +89,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <a href="../researchpages" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
     <a href="../skills" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Professional Interests</a>
     <a href="../CV" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="../leafanalyser" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Leaf Analyser demo</a>
-    <a href="../FRETsimulator" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">FRET simulator demo</a>
-    <a href="../alannaoption1" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">alttemplate1</a>
-    <a href="../alannaoption2" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">alttemplate2</a>
-    <a href="../alannaoption3" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">alttemplate3</a>
+    <div class="dropdown">
+    <button class="w3-bar-item w3-button w3-hide-small w3-hover-white">Coding Demos
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../leafanalyser">Leaf Analyser demo</a>
+      <a href="../FRETsimulator">FRET simulator demo</a>
+    </div>
   </div>
+    </div>
 </div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
