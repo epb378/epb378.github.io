@@ -41,7 +41,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-main" style="margin-top:150px">
 <div class="w3-main" style="margin-right:100px">
     <h1 class="w3-text-teal">Dye aggregate FRET simulator</h1>
-    <p>I am in the process of  developing a montecarlo FRET simulator. This program will make an assembly of dye molecules and simulate their non-radiative interactions to predic an output spectrum.</p>
+    <p>This project is a Monte Carlo simulation of aggregates of organic dye molecules. One of the dye molecules in the assembly is randomly excited by a photon of a given wavelenth. This excitation can percolate through the system by Forster resonant energy transfer, can radiatively emit from its current host molecule, or non-radiatively recombine. This process is repeated for 10,000 photons and the resultant output spectrum of photons is calculated to determine the spectrum of that aggregate. </p>
+    <img src="../images/bettergif.gif" alt="Demonstration of calculating the output spectrum and PLQE of a given aggregate?">
+    <p>The simulator calculates the PLQE, or photoluminescence quantum efficiency (how many photons are given out for each absorbed photon), and this will be fed into an optimiser that will change the ratios of the red to green to blue dye molecules, as well as their density, to maximise the PLQE.</p>
+    <p>The code of this simulation is available <a href="https://github.com/epb378/FRET-simulator/tree/master/fretmeister">here</a>.
   </div>
 
 
